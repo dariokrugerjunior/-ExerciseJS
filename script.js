@@ -4,7 +4,8 @@ function loading() {
     var img = window.document.getElementById('image')
     var date = new Date()
     var hours = date.getHours()
-    msg.innerHTML = `Agora são ${hours} horas`
+    var minutes = date.getMinutes()
+    msg.innerHTML = `Agora são ${hours}:${minutes} horas`
 
     if (hours >= 0 && hours < 12) {
         // BOM DIA
