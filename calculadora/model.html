@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>Primeiro Numero</p>
+            <input type="number" name="num01" id="num01" min="0">
+
+            <p>Segundo Numero</p>
+            <input type="number" name="num02" id="num02" min="0">
+
+
+            <p>Qual equação deseja realizar ?
+
+                <input type="radio" name="radioChoice" id="som" value="som" checked>
+                <label for="som">Soma</label>
+                <input type="radio" name="radioChoice" id="sub" value="sub">
+                <label for="sub">Subtração</label>
+                <input type="radio" name="radioChoice" id="mul" value="mul">
+                <label for="mul">Multiplicar</label>
+                <input type="radio" name="radioChoice" id="div" value="div">
+                <label for="div">Dividir</label>
+
+            </p>
+
+            <p>
+                <input type="button" value="Verificar" onclick="calculo()">
+            </p>
+
+
+            <div>
+                Preencha os dados a cima para ver o resultado!
+            </div>
+
+            <div id="res">
+            </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; DKJ</p>
+    </footer>
+    <script src="script.js"> </script>
+</body>
+
+</html>
